@@ -3,26 +3,19 @@ export const artworks = [
     {
         id: 1,
         artist: "mas amba",
-        image: "/gallery/ye.jpg"
+        image: "/gallery/ye.jpg",
+        preview: "/gallery/ye.jpg"
     },
     {
         id: 2,
         artist: "mas gilang",
-        image: "/gallery/gi.jpg"
+        image: "/gallery/gi.jpg",
+        preview: "/gallery/gi.jpg"
     },
     {
         id: 3,
         artist: "lex",
-        image: "/gallery/a.jpg"
+        image: "/gallery/a.jpg",
+        preview: "/gallery/a-p.jpg"
     },
-    {
-        id: 4,
-        artist: "yk",
-        image: "/gallery/yo.png"
-    },
-    {
-        id: 5,
-        artist: "be",
-        image: "/gallery/b.jpg"
-    }
 ]

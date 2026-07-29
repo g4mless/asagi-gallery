@@ -11,9 +11,12 @@
 <div
     class="mx-auto grid max-w-7xl grid-cols-[180px_1fr] items-start gap-16 px-16 py-6"
 >
-    <div class="bg-[#FAF9F6] p-4 shadow-xl">
-        <p class="text-xl text-black font-sans">Artist:</p>
-        <p class="text-xl text-black font-sans">@{artwork?.artist}</p>
+    <div>
+        <a href="/" class="text-2xl">back</a>
+        <div class="bg-[#FAF9F6] p-4 shadow-xl">
+            <p class="text-xl text-black font-sans">Artist:</p>
+            <p class="text-xl text-black font-sans">@{artwork?.artist}</p>
+        </div>
     </div>
 
     <div class="flex justify-center">
