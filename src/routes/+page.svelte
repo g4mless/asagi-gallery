@@ -6,7 +6,7 @@
 
 <Header />
 <div class="mx-auto max-w-7xl px-8">
-    <div class="mt-6 grid grid-cols-4 justify-items-center gap-x-10 gap-y-14">
+    <div class="mt-6 grid grid-cols-2 justify-items-center gap-x-10 gap-y-14 md:grid-cols-4">
         {#each artworks as artwork}
             <a href="/g/{artwork.id}">
                 <GalleryCard {artwork} />
