@@ -9,12 +9,14 @@
 <Header />
 
 <div
-    class="mx-auto grid max-w-7xl grid-cols-[180px_1fr] items-start gap-16 px-16 py-6"
+    class="mx-auto grid max-w-7xl items-start gap-8 px-4 py-6 md:grid-cols-[180px_auto] md:justify-center md:gap-16 md:px-16"
 >
-    <div>
+    <div
+        class="contents md:col-start-1 md:row-start-1 md:flex md:flex-col md:items-center md:justify-start md:self-stretch md:pt-8"
+    >
         <a
             href="/"
-            class="group mb-6 inline-flex -rotate-2 items-center gap-2 bg-[#FAF9F6] px-4 py-2 font-mono text-sm font-bold uppercase tracking-wide text-black shadow-md transition hover:rotate-0 hover:bg-white hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FAF9F6]"
+            class="group order-1 inline-flex w-44 -rotate-2 items-center gap-2 justify-self-start whitespace-nowrap bg-[#FAF9F6] px-4 py-2 font-mono text-sm font-bold uppercase tracking-wide text-black shadow-md transition hover:rotate-0 hover:bg-white hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FAF9F6]"
             aria-label="Back to gallery"
         >
             <svg
@@ -33,20 +35,21 @@
             </svg>
             Back to gallery
         </a>
+
         <div
-            class="rotate-2 bg-[#FAF9F6] p-4 shadow-xl transition duration-300 hover:rotate-0"
+            class="order-3 mt-6 w-44 rotate-2 bg-[#FAF9F6] p-4 shadow-xl transition duration-300 hover:rotate-0"
         >
-            <p class="text-xl text-black font-sans">Artist:</p>
-            <p class="text-xl text-black font-sans">@{artwork?.artist}</p>
+            <p class="font-sans text-xl text-black">Artist:</p>
+            <p class="font-sans text-xl text-black">@{artwork?.artist}</p>
         </div>
     </div>
 
-    <div class="flex justify-center">
+    <div class="order-2 flex justify-center md:col-start-2 md:row-start-1">
         <div class="bg-[#FAF9F6] p-4 pt-6 pb-15 shadow-xl">
             <img
                 src={artwork?.image}
                 alt={artwork?.artist}
-                class="w-full object-cover"
+                class="max-h-[calc(100dvh-16rem)] max-w-full object-contain md:max-h-[calc(100dvh-10rem)]"
             />
         </div>
     </div>

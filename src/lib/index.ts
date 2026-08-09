@@ -2,20 +2,32 @@
 export const artworks = [
     {
         id: 1,
-        artist: "mas amba",
-        image: "/gallery/ye.jpg",
-        preview: "/gallery/ye.jpg"
+        artist: "Lexuzzz",
+        image: "/g/first.jpg",
+        preview: "/g/first.jpg"
     },
     {
         id: 2,
-        artist: "mas gilang",
-        image: "/gallery/gi.jpg",
-        preview: "/gallery/gi.jpg"
+        artist: "Lexuzz",
+        image: "/g/peace.jpg",
+        preview: "/g/peace-pv.jpg"
     },
     {
         id: 3,
-        artist: "lex",
-        image: "/gallery/a.jpg",
-        preview: "/gallery/a-p.jpg"
+        artist: "waylake",
+        image: "/g/stretching.png",
+        preview: "/g/stretching-pv.png"
+    },
+    {
+        id: 4,
+        artist: "Lexuzz",
+        image: "/g/twintail.png",
+        preview: "/g/twintail.png"
+    },
+    {
+        id: 5,
+        artist: "g4mless",
+        image: "/g/shy.png",
+        preview: "/g/shy-pv.png"
     },
 ]
