@@ -45,7 +45,10 @@
     </div>
 
     <div class="order-2 flex justify-center md:col-start-2 md:row-start-1">
-        <div class="bg-[#FAF9F6] p-4 pt-6 pb-15 shadow-xl">
+        <div
+            class="bg-[#FAF9F6] p-4 pt-6 pb-15 shadow-xl"
+            style="view-transition-name: art-{artwork?.id ?? page.params.id}"
+        >
             <img
                 src={artwork?.image}
                 alt={artwork?.artist}

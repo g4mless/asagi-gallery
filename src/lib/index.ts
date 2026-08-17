@@ -7,24 +7,6 @@ export const artworks = [
         preview: "/g/first.jpg"
     },
     {
-        id: 2,
-        artist: "Lexuzz",
-        image: "/g/peace.jpg",
-        preview: "/g/peace-pv.jpg"
-    },
-    {
-        id: 3,
-        artist: "waylake",
-        image: "/g/stretching.png",
-        preview: "/g/stretching-pv.png"
-    },
-    {
-        id: 4,
-        artist: "Lexuzz",
-        image: "/g/twintail.png",
-        preview: "/g/twintail.png"
-    },
-    {
         id: 5,
         artist: "g4mless",
         image: "/g/shy.png",

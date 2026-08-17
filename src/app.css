@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+/* View Transition — shared element homepage ↔ /g/[id] */
+@supports (view-transition-name: none) {
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation-duration: 380ms;
+		animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+	}
+	/* dim non-shared content during morph */
+	::view-transition-old(root) { animation-name: vt-fade-out; }
+	::view-transition-new(root) { animation-name: vt-fade-in; }
+	@keyframes vt-fade-out { from { opacity: 1; } to { opacity: 0; } }
+	@keyframes vt-fade-in  { from { opacity: 0; } to { opacity: 1; } }
+
+	/* shared artwork - matched by GalleryCard ↔ detail */
+	::view-transition-group(art-1),
+	::view-transition-group(art-2),
+	::view-transition-group(art-3),
+	::view-transition-group(art-4),
+	::view-transition-group(art-5) { animation-duration: 520ms; animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) { animation-duration: 0.01ms !important; }
+}
